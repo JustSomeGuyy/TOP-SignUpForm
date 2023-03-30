@@ -5,13 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
     <title>The Odin Project Sign-Up Form</title>
 </head>
 <body>
     <div class="sidebar">
         <img src="images/phone.jpg" style="width: 30vw; height: 101vh;" alt="">
         <div class="logo-credit">
-        <h2 class="logo">Odin's Form</h2>
+        <h1 class="logo">Odin's Form</h1>
         <p class="photo-credit">Photo by <a href="https://www.pexels.com/photo/black-iphone-7-on-brown-table-699122/">Tyler Lastovich</a></p>
         </div>
     </div>
@@ -21,30 +24,41 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, possimus!</p>
         </div>
         <div class="formArea">
+            <h2 class="form-head">You know you want to!</h2>
             <form action="#">
-                <legend class="form-head">You know you want to!</legend>
-                    <label for="first_name" class="left">First Name</label>
-                    <input type="text" name="first_name" id="first_name" class="left" required>
-                    <label for="last-name" class="right">Last Name</label>
-                    <input type="text" name="last-name" id="last-name" class="right" required>
-                    <label for="email" class="left">Email</label>
-                    <input type="text" name="email" id="email" class="left" required>
-                    <label for="phone" class="right">Phone Number</label>
-                    <input type="number" name="phone" id="phone" max="10" class="right" required>
-                    <label for="password" class="left">Password</label>
-                    <input type="password" name="password" id="password" class="left" required>
-                    <label for="confirmed" class="right">Confirm Password</label>
-                    <input type="password" name="confirmed" id="confirmed" class="right" required>
-                    
+                    <div class="form-section">
+                        <label for="first_name" class="left">FIRST NAME</label>
+                        <input type="text" name="first_name" id="first_name" required>
+                    </div>
+                    <div class="form-section">
+                        <label for="last-name" class="right">LAST NAME</label>
+                        <input type="text" name="last-name" id="last-name" required>
+                    </div>
+                    <div class="form-section">
+                        <label for="email" class="left">EMAIL</label>
+                        <input type="text" name="email" id="email" required>
+                    </div>
+                    <div class="form-section">
+                        <label for="phone" class="right">PHONE NUMBER</label>
+                        <input type="number" name="phone" id="phone" max="10" required>
+                    </div>
+                    <div class="form-section">
+                        <label for="password" class="left">PASSWORD</label>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+                    <div class="form-section">
+                        <label for="confirmed" class="right">CONFIRM PASSWORD</label>
+                        <input type="password" name="confirmed" id="confirmed" required>
+                    </div>
             </form>
         </div>
     </div>
-    <button type="submit">Create Account</button>
+    <div class="button"><button type="submit">Create Account</button></div>
     <div class="login">
         <p>Already have an account? <a href="#">Log in</a></p>
     </div>
     <div class="footer">
-        Copyright by Tyler W 2023 <a href="#"><img src="images/github-mark.png" style="width: 20px; margin-left: .4em;" alt="github logo"></a>
+        Copyright by Tyler W 2023 <a href="https://github.com/JustSomeGuyy"><img src="images/github-mark.png" style="width: 20px; margin-left: .4em;" alt="github logo"></a>
     </div>
 </body>
 </html>
